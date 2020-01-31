@@ -15,9 +15,8 @@ class Nav extends React.Component {
             <Router>
                 <a onClick={() => navigateToUrl("/admin")} className={styles.tab}>Admin Home</a>
                 <a onClick={() => navigateToUrl("/admin/test")} className={styles.tab}>Admin Test</a>
-
-                <a onClick={() => navigateToUrl("/community")} className={styles.tab}>Community Home</a>
-                <a onClick={() => navigateToUrl("/community/test")} className={styles.tab}>Community Test</a>
+                <a onClick={() => navigateToUrl("/profile")} className={styles.tab}>Community Home</a>
+                <a onClick={() => navigateToUrl("/profile/test")} className={styles.tab}>Community Test</a>
             </Router>
         )
     }

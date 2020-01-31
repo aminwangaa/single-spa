@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/nav/nav/index.less"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA","file":"4.css","sourcesContent":[".index_tab_Gi6pp {\n  margin-right: 12px;\n  cursor: pointer;\n  font-size: 16px;\n  color: #333333;\n}\n.index_tab_Gi6pp:hover {\n  color: #1890ff;\n}\n"],"sourceRoot":""}

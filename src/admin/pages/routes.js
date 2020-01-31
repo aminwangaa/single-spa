@@ -6,13 +6,13 @@ import Loadable from "react-loadable"
 //首页
 const Home = Loadable({
     loader: () =>
-        import("./home/index.jsx"),
+        import(/* webpackChunkName: "admin-home" */"./home/index.jsx"),
     loading: () => null
 })
 
 const Test = Loadable({
     loader: () =>
-        import("./test/index.jsx"),
+        import(/* webpackChunkName: "admin-test" */"./test/index.jsx"),
     loading: () => null
 })
 

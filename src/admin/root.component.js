@@ -5,6 +5,7 @@ import RouteList from "./pages/routes"
 import {Provider} from "react-redux"
 import store from "../store"
 
+
 export default class Root extends React.Component {
 
 

@@ -7,28 +7,28 @@ const commonContext = {
 
 registerApplication(
     'vue',
-    () => import('./src/vue/vue.app.js'),
+    () => import(/* webpackChunkName: "vue" */'./src/vue/vue.app.js'),
     pathPrefix("/vue")
 )
 
 
 registerApplication(
-    'community',
-    () => import('./src/community/react.app.js'),
-    pathPrefix("/community"),
+    'profile',
+    () => import(/* webpackChunkName: "profile" */'./src/profile/react.app.js'),
+    pathPrefix("/profile"),
     {commonContext}
 )
 
 registerApplication(
     'admin',
-    () => import('./src/admin/react.app.js'),
+    () => import(/* webpackChunkName: "admin" */'./src/admin/react.app.js'),
     pathPrefix("/admin"),
     {commonContext}
 )
 
 registerApplication(
     'nav',
-    () => import('./src/nav/react.app.js'),
+    () => import(/* webpackChunkName: "nav" */'./src/nav/react.app.js'),
     () => true
 )
 
