@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack:///./src/admin/pages/test/index.less"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA;AACA","file":"3.css","sourcesContent":[".index_testDiv_3J3Tc {\n  background: palegreen;\n  width: 200px;\n  height: 200px;\n  display: flex;\n}\n"],"sourceRoot":""}
