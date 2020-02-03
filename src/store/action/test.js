@@ -1,10 +1,7 @@
-import * as Types from "../action-types";
+import * as Types from "../action-types"
 
-const addNum = (params)=>{
-    console.log(params)
-    return async (dispatch)=>{
-        await dispatch({type:Types.ADD_NUM, data: params })
-    }
+const addNum = (params) => async (dispatch) => {
+  await dispatch({ type: Types.ADD_NUM, data: params })
 }
 
-export { addNum }
+export default { addNum }

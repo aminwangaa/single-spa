@@ -1,17 +1,14 @@
-import React from 'react'
-import {render} from 'react-dom'
-import Nav from "./nav/index.jsx"
-import {Provider} from "react-redux"
+import React from "react"
+import { Provider } from "react-redux"
+import Nav from "./nav/index"
 import store from "../store"
 
-export default class Root extends React.Component {
-
-
-    render() {
-        return (
-            <Provider store={store}>
-                <Nav />
-            </Provider>
-        )
-    }
+function Root() {
+  return (
+    <Provider store={store}>
+      <Nav />
+    </Provider>
+  )
 }
+
+export default Root
