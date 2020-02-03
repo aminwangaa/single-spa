@@ -13,8 +13,8 @@ class Test extends React.Component {
     return (
       <div>
         <h1>Hello from Community Test</h1>
-        <Link to="/community">Community Home</Link>
-
+        <Link to="/profile">Community Home</Link>
+        <br />
         <Link to="/admin">To Admin Home</Link>
       </div>
     )

@@ -15,6 +15,7 @@ module.exports = {
         "jsx-quotes": ["error", "prefer-double"],
         semi: ["error", "never"],
         quotes: ["error", "double"],
+        "no-console": 0,
         "indent": ["error", 2],
         "react/jsx-filename-extension": ["warn", {extensions: [".js", ".jsx"]}],
         "no-restricted-globals": ["error", "event", "fdescribe"],
