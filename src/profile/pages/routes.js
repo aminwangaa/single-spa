@@ -6,12 +6,12 @@ import Loadable from "react-loadable"
 // 首页
 const Home = Loadable({
   loader: () => import(/* webpackChunkName: "profile-home" */"./home/index.jsx"),
-  loading: () => null,
+  loading: () => null
 })
 
 const Test = Loadable({
   loader: () => import(/* webpackChunkName: "profile-test" */"./test/index.jsx"),
-  loading: () => null,
+  loading: () => null
 })
 
 const RouteList = () => (

@@ -2,6 +2,6 @@ import { combineReducers } from "redux"
 import test from "./test"
 
 const reducer = combineReducers({
-  test,
+  test
 })
 export default reducer

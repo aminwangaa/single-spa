@@ -6,18 +6,18 @@ const vueLifecycles = singleSpaVue({
   Vue,
   appOptions: {
     el: "#root",
-    render: (r) => r(Hello),
-  },
+    render: (r) => r(Hello)
+  }
 })
 
 export const bootstrap = [
-  vueLifecycles.bootstrap,
+  vueLifecycles.bootstrap
 ]
 
 export const mount = [
-  vueLifecycles.mount,
+  vueLifecycles.mount
 ]
 
 export const unmount = [
-  vueLifecycles.unmount,
+  vueLifecycles.unmount
 ]

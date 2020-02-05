@@ -1,6 +1,6 @@
 import * as test from "./test"
 
 const actions = {
-  test,
+  test
 }
 export default actions

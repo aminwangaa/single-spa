@@ -10,22 +10,32 @@ module.exports = {
         node: true // require process
     },
     parser: "babel-eslint", // 源代码转成语法树
+    settings: {
+      react: { "version": "detect" },
+      "import/resolver": {
+        node: {
+          extensions: [".js", ".jsx", ".tsx", ".ts"]
+        }
+       }
+    },
     rules: {
         "linebreak-style": [0 ,"error", "windows"],
         "jsx-quotes": ["error", "prefer-double"],
-        semi: ["error", "never"],
-        quotes: ["error", "double"],
+        "semi": ["error", "never"],
+        "quotes": ["error", "double"],
         "no-console": 0,
         "indent": ["error", 2],
         "react/jsx-filename-extension": ["warn", {extensions: [".js", ".jsx"]}],
         "no-restricted-globals": ["error", "event", "fdescribe"],
         "no-param-reassign": ["error", { "props": false }],
         "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
-        eqeqeq: 0,
+        "eqeqeq": 0,
         "jsx-a11y/click-events-have-key-events": "off",
         "jsx-a11y/no-static-element-interactions": "off",
         "jsx-a11y/anchor-is-valid": "off",
-        "import/prefer-default-export": 0
-    },
+        "import/prefer-default-export": 0,
+        "comma-dangle": ["error", "never"],
+        "arrow-body-style": ["error", "as-needed"]
+    }
 }
 

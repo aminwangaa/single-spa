@@ -27,5 +27,5 @@ const mapQuery = (uri) => {
 }
 
 export {
-  mapQuery,
+  mapQuery
 }

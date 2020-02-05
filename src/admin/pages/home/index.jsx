@@ -1,32 +1,26 @@
-import React from "react"
+import React, { useState } from "react"
 import { Link } from "react-router-dom"
-import { Button } from "antd"
-import bannerImg from "./img/banner.jpg"
+import { Button, message } from "antd"
 import styles from "./index.less"
+import bannerImg from "./img/banner.jpg"
 
-class Home extends React.Component {
-  constructor() {
-    super()
-    this.state = {
-      name: "amin",
-    }
+const Home = () => {
+  const [name, setName] = useState("amin")
+  const btnClick = () => {
+    setName(() => "zf")
+    message.success("成功")
   }
-
-  render() {
-    const { name } = this.state
-    return (
-      <div>
-        <h1>Hello from Admin</h1>
-        <Link to="/admin/test">Admin Test</Link>
-        <Button type="primary">
-          点我
-          {name}
-        </Button>
-        <img src={bannerImg} alt="" className={styles.img} />
-      </div>
-    )
-  }
+  return (
+    <div>
+      <h1>Hello from Admin</h1>
+      <Link to="/admin/test">Admin Test</Link>
+      <Button type="primary" onClick={btnClick}>
+        我
+      </Button>
+      {name}
+      <img src={bannerImg} alt="" className={styles.img} />
+    </div>
+  )
 }
-
 
 export default Home
